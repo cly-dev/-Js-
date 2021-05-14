@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="./static/css/song.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/iconfont.css"/>
+	</head>
+	<body>
+		<!--播放器主体-->
+		<section class="song_container">
+			<img src="./static/images/logo.png" alt="" class="logo">
+			<!-- 歌曲名 -->
+			<section class="song_nickname">
+				<span class="song_name">暂无歌曲</span>
+			</section>
+			<!-- 歌手名 -->
+			<section class="song_author">宋东野</section>
+			<!--播放器磁盘-->
+			<section class="song_cover">
+				<img src="./static/images/maotouying.jpeg" class="song_img"/>
+			</section>
+			<!--歌曲信息-->
+			<section class="song_info">
+				<span class="song_lyric">暂无歌曲</span>
+				<audio crossorigin="anonymous"
+				></audio>
+				<!-- 进度条 -->
+				<section class="song_progress">
+					<span class="song_start">00.00</span> 
+					<span class="progress"></span>
+					<span  class="radius"></span>
+					<span class="song_end">00.00</span>
+				</section>
+				
+			</section>
+			<!--歌曲控制台-->
+			<section class="song_contron">
+				<span class="iconfont icon-yinliangjia"></span>
+				<span class="iconfont icon-icon-1"></span>
+				<span class="iconfont icon-bofang" style="font-size:45px"></span>
+				<span class="iconfont icon-icon-"></span>
+				<span class="iconfont icon-yinliangjian"></span>
+			</section>
+		</section>
+		<script src="./static/js/song.js" type="module"></script>
+	</body>
+</html>

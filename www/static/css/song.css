@@ -1,0 +1,153 @@
+*{
+	margin:0;
+	padding:0;
+}
+.song_container{
+		border:1px solid #E4E7ED;
+		width:600px;
+		margin:100px auto;
+		height:400px;
+		border-radius:10px;
+		position:relative;
+		overflow: hidden;
+		background-color: #606266;
+}
+.logo{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 40%;
+	left: 5%;
+	margin-top: -75px;
+}
+.song_author{
+	color: black;
+	margin-top: 40px;
+	text-align: center;
+}
+.song_nickname{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: #d43c33;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.song_cover{
+	margin-left:-75px;
+	top:3%;
+	left:50%;
+	border-radius:50%;
+	text-align:center;
+	position:relative;
+	background-color:#DCDFE6;
+	width:150px;
+	height:150px;
+}
+.song_img{
+	top:50%;
+	left:50%;
+	margin-left:-60px;
+	margin-top:-60px;
+	position:absolute;
+	width:120px;
+	height:120px;
+	border-radius:50%;
+	transition:transform 2s ease;
+}
+.animateRotate{
+	animation:ra 4s linear infinite;
+}
+
+.song_contron{
+	text-align:center;
+	width:100%;
+	position:absolute;
+	border-top:1px solid #E4E7ED;
+	bottom:0;
+	height:100px;
+	line-height:100px;
+}
+.song_info{
+	position:absolute;
+	bottom:100px;
+	height:80px;
+	width:100%;
+	text-align:center;
+	line-height:50px;
+}
+span[class^='icon']{
+	width: 40px;
+	text-align: center;
+	cursor: pointer;
+	font-size:40px;
+	padding:0 30px;
+}
+
+.icon-bofang{
+	font-size:60px;
+}
+.song_progress{
+	cursor: pointer;
+	border:1px solid #DCDFE6;
+	height:.5px;
+	width:60%;
+	margin:0 auto;
+	position:relative;
+	background-color:#DCDFE6 ;
+	border-radius: 5px;
+}
+.song_progress span{
+	display:inline-block;
+	position: absolute;
+	top:50%;
+	
+}
+.radius{
+	top:50%;
+	left:0;
+	margin-top:-8px;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	background-color:black;
+}
+.progress{
+	border-radius:10px;
+	margin-top:-2px;
+	height:2px;
+	border: 1px solid;
+	top:50%;
+	left:-1px;
+	background-color:black;
+}
+.song_start,.song_end{
+	height:16px;
+	margin-top:-8px;
+	width: 60px;
+	margin-top:-8px;
+	line-height: 16px;
+	font-size: 15px;
+}
+.song_name{
+	font-size: 20px;
+}
+.song_start{
+	pointer-events: none;
+	left:-55px;
+}
+.song_end{
+	pointer-events: none;
+
+	right:-55px;
+}
+@keyframes ra{
+	from{
+		transform:rotate(360deg)
+	}
+	to{
+		transform:rotate(0deg)
+	}
+}
